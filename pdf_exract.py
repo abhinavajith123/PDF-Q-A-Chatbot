@@ -12,7 +12,7 @@ def extract_text_from_pdf(pdf_path):
 
 # Example
 pdf_text = extract_text_from_pdf("Gb.pdf")
-print(pdf_text[:100])   # print first 1000 characters
+
 #%%
 #convert to chunks
 def chunks_creation(text):
@@ -25,7 +25,7 @@ def chunks_creation(text):
     return chunks
 
 chunks = chunks_creation(pdf_text)
-#
+
 #%%
 print(len(chunks))
 print("f:",chunks[1])
@@ -111,7 +111,7 @@ Answer:
     #return response.choices[0].message["content"]
 
 # %%
-query = input("Your Question on Bale:")
+query = input("Your Question :")
 
 
 
